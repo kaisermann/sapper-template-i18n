@@ -41,12 +41,20 @@ export function startClient() {
 	});
 }
 
+const DOCUMENT_REGEX = /^([^.?#@]+)?([?#](.+)?)?$/;
 // initialize the i18n library in the server and returns its middleware
 export function i18nMiddleware() {
 	// initialLocale will be set by the middleware
 	init(INIT_OPTIONS);
 
 	return (req, res, next) => {
+		const isDocument = DOCUMENT_REGEX.test(req.originalUrl);
+		// get the initial locale only for a document request
+		if (!isDocument) {
+			next();
+			return;
+		}
+
 		let lang = getCookie('locale', req.headers.cookie);
 
 		// no cookie, let's get the first accepted language
