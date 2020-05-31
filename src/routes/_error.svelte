@@ -1,4 +1,6 @@
 <script>
+	import { _ } from 'svelte-i18n';
+
 	export let status;
 	export let error;
 
@@ -6,7 +8,8 @@
 </script>
 
 <style>
-	h1, p {
+	h1,
+	p {
 		margin: 0 auto;
 	}
 
@@ -32,6 +35,7 @@
 </svelte:head>
 
 <h1>{status}</h1>
+<h1>{$_('messages.error', { values: { status } })}</h1>
 
 <p>{error.message}</p>
 

@@ -55,18 +55,18 @@ export function i18nMiddleware() {
 			return;
 		}
 
-		let lang = getCookie('locale', req.headers.cookie);
+		let locale = getCookie('locale', req.headers.cookie);
 
 		// no cookie, let's get the first accepted language
-		if (lang == null) {
+		if (locale == null) {
 			const headerLang = req.headers['accept-language'].split(',')[0].trim();
 			if (headerLang.length > 1) {
-				lang = headerLang;
+				locale = headerLang;
 			}
 		}
 
-		if (lang != null && lang !== currentLocale) {
-			$locale.set(lang);
+		if (locale != null && locale !== currentLocale) {
+			$locale.set(locale);
 		}
 
 		next();

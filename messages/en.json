@@ -8,6 +8,7 @@
     "blog": "Blog"
   },
   "messages": {
+    "error": "Error: {status}",
     "success": "Great success!",
     "high_five": "High five",
     "try_editing": "Try editing this file (src/routes/index.svelte) to test live reloading."
