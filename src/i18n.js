@@ -41,7 +41,7 @@ export function startClient() {
 	});
 }
 
-// init only for routes (urls with no extensions / .js, .css, ... /) and a service worker
+// init only for routes (urls with no extensions such as .js, .css, etc) and for service worker
 const DOCUMENT_REGEX = /(\/([\w-]+)?|^\/service-worker-index\.html)($|[?#]([\w-]+)?)/;
 // initialize the i18n library in the server and returns its middleware
 export function i18nMiddleware() {
