@@ -41,7 +41,8 @@ export function startClient() {
 	});
 }
 
-const DOCUMENT_REGEX = /^([^.?#@]+)?([?#](.+)?)?$/;
+// init only for routes (urls with no extensions / .js, .css, ... /) and a service worker
+const DOCUMENT_REGEX = /(\/([\w-]+)?|^\/service-worker-index\.html)($|[?#]([\w-]+)?)/;
 // initialize the i18n library in the server and returns its middleware
 export function i18nMiddleware() {
 	// initialLocale will be set by the middleware
