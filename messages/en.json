@@ -1,23 +1,29 @@
 {
-  "title": {
-    "index": "Sapper project template!"
-  },
-  "nav": {
-    "home": "Home",
-    "about": "About",
-    "blog": "Blog"
+  "about_content": [
+    "This is the about page"
+  ],
+  "about_this_site": "About this site",
+  "direction": "ltr",
+  "languages": {
+    "ar": "عربى",
+    "en": "English",
+    "es_ES": "Espanol",
+    "pt_BR": "Português"
   },
   "messages": {
     "error": "Error: {status}",
-    "success": "Great success!",
     "high_five": "High five",
+    "success": "Great success!",
     "try_editing": "Try editing this file (src/routes/index.svelte) to test live reloading."
   },
-  "languages": {
-    "en": "English",
-    "pt_BR": "Português",
-    "es_ES": "Espanol",
-    "ar": "عربى"
+  "nav": {
+    "about": "About",
+    "blog": "Blog",
+    "home": "Home",
+    "product": "Product"
   },
-  "direction": "ltr"
+  "product": "Product",
+  "title": {
+    "index": "Sapper project template!"
+  }
 }

@@ -1,23 +1,26 @@
 {
-	"title": {
-		"index": "Modelo de projeto em Sapper!"
-	},
-	"nav": {
-		"home": "Home",
-		"about": "Sobre",
-		"blog": "Blog"
-	},
-	"messages": {
-		"error": "Error: {status}",
-		"success": "Suuuucesso!",
-		"high_five": "Toca aqui",
-		"try_editing": "Tente editar este arquivo (src/routes/index.svelte) para testar o recarregamento ao vivo."
-	},
-	"languages": {
-		"en": "English",
-		"pt_BR": "Português",
-		"es_ES": "Espanol",
-		"ar": "عربى"
-	},
-	"direction": "ltr"
+  "about_this_site": "Sobre este site",
+  "direction": "ltr",
+  "languages": {
+    "ar": "عربى",
+    "en": "English",
+    "es_ES": "Espanol",
+    "pt_BR": "Português"
+  },
+  "messages": {
+    "error": "Error: {status}",
+    "high_five": "Toca aqui",
+    "success": "Suuuucesso!",
+    "try_editing": "Tente editar este arquivo (src/routes/index.svelte) para testar o recarregamento ao vivo."
+  },
+  "nav": {
+    "about": "Sobre",
+    "blog": "Blog",
+    "home": "Home",
+    "product": ""
+  },
+  "product": "Produtos",
+  "title": {
+    "index": "Modelo de projeto em Sapper!"
+  }
 }

@@ -1,23 +1,26 @@
 {
-  "title": {
-    "index": " Plantilla de proyecto Sapper!"
-  },
-  "nav": {
-    "home": "Inicio",
-    "about": "Acerca",
-    "blog": "Blog"
+  "about_this_site": "Acerca de este sitio",
+  "direction": "ltr",
+  "languages": {
+    "ar": "عربى",
+    "en": "English",
+    "es_ES": "Espanol",
+    "pt_BR": "Português"
   },
   "messages": {
-		"error": "Error: {status}",
-    "success": "Gran éxito!",
+    "error": "Error: {status}",
     "high_five": "Cinco altos",
+    "success": "Gran éxito!",
     "try_editing": " Intente editar este archivo (src/routes/index.svelte) para probar la recarga en vivo."
   },
-  "languages": {
-    "en": "English",
-    "pt_BR": "Português",
-    "es_ES": "Espanol",
-    "ar": "عربى"
+  "nav": {
+    "about": "Acerca",
+    "blog": "Blog",
+    "home": "Inicio",
+    "product": ""
   },
-  "direction": "ltr"
+  "product": "Producto",
+  "title": {
+    "index": " Plantilla de proyecto Sapper!"
+  }
 }

@@ -65,6 +65,9 @@
     <li>
       <a class:selected={segment === 'about'} href="about">{$_('nav.about')}</a>
     </li>
+    <li>
+      <a class:selected={segment === 'product'} href="product">{$_('nav.product')}</a>
+    </li>
   </ul>
   <ul class="lang">
     {#each $locales as item}

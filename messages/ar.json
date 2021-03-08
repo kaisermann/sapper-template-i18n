@@ -1,23 +1,26 @@
 {
-	"title": {
-		"index": "Sapper project template!"
-	},
-	"nav": {
-		"home": "الرئيسية",
-		"about": "من نحن",
-		"blog": "اتصل بنا"
-	},
-	"messages": {
-		"error": "خطأ: {status}",
-		"success": "عظيم",
-		"high_five": "خمسة",
-		"try_editing": "حاول تحرير هذا الملف (src/routes/index.svelte) لاختبار إعادة التحميل المباشر."
-	},
-	"languages": {
-		"en": "English",
-		"pt_BR": "Português",
-		"es_ES": "Espanol",
-		"ar": "عربى"
-	},
-	"direction": "rtl"
+  "about_this_site": "حول هذا الموقع",
+  "direction": "rtl",
+  "languages": {
+    "ar": "عربى",
+    "en": "English",
+    "es_ES": "Espanol",
+    "pt_BR": "Português"
+  },
+  "messages": {
+    "error": "خطأ: {status}",
+    "high_five": "خمسة",
+    "success": "عظيم",
+    "try_editing": "حاول تحرير هذا الملف (src/routes/index.svelte) لاختبار إعادة التحميل المباشر."
+  },
+  "nav": {
+    "about": "من نحن",
+    "blog": "اتصل بنا",
+    "home": "الرئيسية",
+    "product": ""
+  },
+  "product": "منتج",
+  "title": {
+    "index": "Sapper project template!"
+  }
 }
