@@ -1,5 +1,9 @@
 {
+  "about_content": [
+    ""
+  ],
   "about_this_site": "Acerca de este sitio",
+  "current_lang": "es/",
   "direction": "ltr",
   "languages": {
     "ar": "عربى",
@@ -17,9 +21,13 @@
     "about": "Acerca",
     "blog": "Blog",
     "home": "Inicio",
-    "product": ""
+    "product": "",
+    "routing": "Enrutamiento"
   },
   "product": "Producto",
+  "routing": {
+    "title": "Cómo funciona el enrutamiento internacionalizado"
+  },
   "title": {
     "index": " Plantilla de proyecto Sapper!"
   }

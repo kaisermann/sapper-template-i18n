@@ -22,9 +22,9 @@
 </style>
 
 <svelte:head>
-  <title>{$_('title.about')}</title>
+  <title>{$_('nav.routing')}</title>
 </svelte:head>
 
 <div class={$_('direction')}>
-  <h1>{$_('product')}</h1>
+  <h1>{$_('routing.title')}</h1>
 </div>

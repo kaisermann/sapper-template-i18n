@@ -1,7 +1,8 @@
 <script context="module">
   import { isLoading, waitLocale } from 'svelte-i18n';
 
-  export async function preload(page) {
+  export async function preload({params}) {
+    console.log("layout params", params)
     return waitLocale();
   }
 </script>
@@ -10,6 +11,7 @@
   import Nav from '../components/Nav.svelte';
 
   export let segment;
+  console.log("layout says segment is", segment)
 </script>
 
 <style>

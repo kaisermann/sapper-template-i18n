@@ -1,6 +1,38 @@
+<script context="module">
+  import { isLoading, waitLocale } from 'svelte-i18n';
+
+  export async function preload({ params, query }) {
+    console.log("params", params)
+    waitLocale();
+    return { page: params }
+  }
+</script>
+
+
 <script>
+  import { goto, stores } from '@sapper/app';
   import { _, locale, locales } from 'svelte-i18n';
   export let segment;
+  
+  const { page } = stores();
+
+  let localePath = $locale === "en" ? "" : $locale
+
+  const setLocale = (item) => {
+    let [, lang, ...rest] = $page.path.split('/')
+
+    let pagePart = [lang, ...rest].join('/')
+    if ($locales.includes(lang)) {
+      pagePart = rest.join('/')
+    } else {
+      console.log("no language is included")
+    }
+
+    $locale = item
+    localePath = $locale === "en" ? "" : $locale + '/'
+    goto(localePath + pagePart)
+  }
+
 </script>
 
 <style>
@@ -60,13 +92,13 @@
 <nav class={$_('direction')}>
   <ul class={$_('direction')}>
     <li>
-      <a class:selected={segment === undefined} href=".">{$_('nav.home')}</a>
+      <a class:selected={segment === undefined} href="{localePath}">{$_('nav.home')}</a>
     </li>
     <li>
-      <a class:selected={segment === 'about'} href="about">{$_('nav.about')}</a>
+      <a class:selected={segment === 'about'} href="{localePath}about">{$_('nav.about')}</a>
     </li>
     <li>
-      <a class:selected={segment === 'product'} href="product">{$_('nav.product')}</a>
+      <a class:selected={segment === 'routing'} href="{localePath}routing">{$_('nav.routing')}</a>
     </li>
   </ul>
   <ul class="lang">
@@ -76,7 +108,7 @@
           class="a"
           class:selected={$locale.includes(item)}
           href={`#!${item}`}
-          on:click={() => ($locale = item)}>
+          on:click={setLocale(item)}>
           {$_('languages.' + item.replace('-', '_'))}
         </span>
       </li>

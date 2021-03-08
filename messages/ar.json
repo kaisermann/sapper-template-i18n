@@ -1,5 +1,9 @@
 {
+  "about_content": [
+    ""
+  ],
   "about_this_site": "حول هذا الموقع",
+  "current_lang": "ar/",
   "direction": "rtl",
   "languages": {
     "ar": "عربى",
@@ -17,9 +21,13 @@
     "about": "من نحن",
     "blog": "اتصل بنا",
     "home": "الرئيسية",
-    "product": ""
+    "product": "",
+    "routing": "التوجيه"
   },
   "product": "منتج",
+  "routing": {
+    "title": "كيف يعمل التوجيه الدولي"
+  },
   "title": {
     "index": "Sapper project template!"
   }

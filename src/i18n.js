@@ -2,6 +2,7 @@ import {
 	register,
 	init,
 	getLocaleFromNavigator,
+	getLocaleFromPathname,
 	locale as $locale,
 } from 'svelte-i18n';
 
@@ -37,7 +38,10 @@ $locale.subscribe((value) => {
 export function startClient() {
 	init({
 		...INIT_OPTIONS,
-		initialLocale: getCookie('locale') || getLocaleFromNavigator(),
+		initialLocale:
+			getCookie('locale') ||
+			// getLocaleFromPathname() ||
+			getLocaleFromNavigator(),
 	});
 }
 
@@ -57,6 +61,7 @@ export function i18nMiddleware() {
 		}
 
 		let locale = getCookie('locale', req.headers.cookie);
+		// let locale = getLocaleFromPathname();
 
 		// no cookie, let's get the first accepted language
 		if (locale == null) {

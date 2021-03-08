@@ -1,5 +1,9 @@
 {
+  "about_content": [
+    ""
+  ],
   "about_this_site": "Sobre este site",
+  "current_lang": "pt/",
   "direction": "ltr",
   "languages": {
     "ar": "عربى",
@@ -17,9 +21,13 @@
     "about": "Sobre",
     "blog": "Blog",
     "home": "Home",
-    "product": ""
+    "product": "",
+    "routing": "Encaminhamento"
   },
   "product": "Produtos",
+  "routing": {
+    "title": "Como funciona o roteamento internacionalizado"
+  },
   "title": {
     "index": "Modelo de projeto em Sapper!"
   }

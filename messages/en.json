@@ -3,6 +3,7 @@
     "This is the about page"
   ],
   "about_this_site": "About this site",
+  "current_lang": "/",
   "direction": "ltr",
   "languages": {
     "ar": "عربى",
@@ -20,9 +21,13 @@
     "about": "About",
     "blog": "Blog",
     "home": "Home",
-    "product": "Product"
+    "product": "",
+    "routing": "Routing"
   },
-  "product": "Product",
+  "product": "",
+  "routing": {
+    "title": "How the internationalized routing works"
+  },
   "title": {
     "index": "Sapper project template!"
   }
