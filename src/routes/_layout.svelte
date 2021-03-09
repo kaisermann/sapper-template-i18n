@@ -2,7 +2,6 @@
   import { isLoading, waitLocale } from 'svelte-i18n';
 
   export async function preload({params}) {
-    console.log("layout params", params)
     return waitLocale();
   }
 </script>
