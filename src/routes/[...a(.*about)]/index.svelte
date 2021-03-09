@@ -22,11 +22,10 @@
 </style>
 
 <svelte:head>
-  <title>{$_('title.about')}</title>
+  <title>{$_('about_this_site')}</title>
 </svelte:head>
 
 <div class={$_('direction')}>
-  <h1>[...a(.*about)]</h1>
   <h1>{$_('about_this_site')}</h1>
   <p>{$_('about_content.0')}</p>
 </div>
